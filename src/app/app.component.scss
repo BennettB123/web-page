@@ -1,0 +1,25 @@
+mat-icon {
+
+  cursor: pointer;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.emoji {
+  background-color: #ffffff;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1em auto;
+}

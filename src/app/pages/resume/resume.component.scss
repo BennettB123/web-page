@@ -1,0 +1,14 @@
+@import '../../../custom-theme.scss';
+
+$primary: map-get($web-page-theme, primary);
+
+h2 {
+  text-align: center;
+  color: mat-color($primary);
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}

@@ -1,1 +1,17 @@
-<p>RESUME PAGE</p>
+<!-- Page Title -->
+<h2>View my Resume</h2>
+
+<!-- Embed the resume in the browser -->
+<pdf-viewer
+  [src]="resumePath"
+  [render-text]="true"
+  style="display:block"
+  [show-borders]="true"
+  [fit-to-page]="true"
+> Your browser is unable to view this PDF file. Please click the download button in order to view it</pdf-viewer>
+
+<!-- Download button for resume -->
+<a [href]="resumePath" download>
+  <button mat-raised-button color="primary">Download my Resume</button>
+</a>
+
