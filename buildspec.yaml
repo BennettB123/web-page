@@ -19,7 +19,8 @@ phases:
   build:
     commands:
       # Builds Angular application.
-      - node ./node_modules/@angular/cli/bin/ng build --$BUILD_ENV
+      - npm install -g @angular/cli
+      - ng build --$BUILD_ENV
 
   post_build:
     commands:
