@@ -6,20 +6,21 @@
     <span class="spacer"></span>
 
     <!-- Hamburger icon to open side nav -->
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    <mat-icon *ngIf="!sidenav.opened" (click)="sidenav.toggle()">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened" (click)="sidenav.toggle()">close</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav position="end">
+  <mat-sidenav #sidenav position="end" mode="push">
     <mat-nav-list>
       <!-- First mat-list-item is due to bug causing first list item to appear indefinitely hovered on-->
       <a mat-list-item [routerLink]="'#'" (click)="sidenav.toggle()"  style="height:0; position: absolute;"></a>
       <div class="gridWrapper">
-        <div class="emoji">😁</div>  <a mat-list-item [routerLink]="'/about'" (click)="sidenav.toggle()"> About Me </a>
-        <div class="emoji">📎</div>  <a mat-list-item [routerLink]="'/resume'" (click)="sidenav.toggle()"> My Resume </a>
+        <div class="emoji">😀</div>  <a mat-list-item [routerLink]="'/about'" (click)="sidenav.toggle()"> About Me </a>
+        <div class="emoji">📑</div>  <a mat-list-item [routerLink]="'/resume'" (click)="sidenav.toggle()"> My Resume </a>
         <div class="emoji">🚀</div>  <a mat-list-item [routerLink]="'/projects'" (click)="sidenav.toggle()"> My Projects </a>
-        <div class="emoji">🏌</div>  <a mat-list-item [routerLink]="'/hobbies'" (click)="sidenav.toggle()"> My Hobbies </a>
+        <div class="emoji">⛳</div>  <a mat-list-item [routerLink]="'/hobbies'" (click)="sidenav.toggle()"> My Hobbies </a>
         <div class="emoji">📞</div>  <a mat-list-item [routerLink]="'/contact'" (click)="sidenav.toggle()"> Contact Me </a>
       </div>
 

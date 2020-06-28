@@ -1,5 +1,4 @@
 mat-icon {
-
   cursor: pointer;
 }
 
@@ -18,4 +17,11 @@ mat-sidenav, mat-sidenav-content {
 .gridWrapper {
   display: grid;
   grid-template-columns: 1em auto;
+}
+
+a {
+}
+
+.emoji {
+  padding: 14px 0px;
 }
