@@ -13,7 +13,6 @@ import { TitlebarComponent } from './titlebar/titlebar.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { HobbiesComponent } from './pages/hobbies/hobbies.component';
@@ -29,7 +28,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     NavigationbarComponent,
     AboutComponent,
     ProjectsComponent,
-    ResumeComponent,
     ContactComponent,
     ErrorComponent,
     HobbiesComponent
