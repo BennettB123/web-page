@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'hobbies', component: HobbiesComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: '', component: AboutComponent },
   { path: '**', component: ErrorComponent },
 ];
 
