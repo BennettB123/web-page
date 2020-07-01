@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+// copy palettes from custom-theme.scss
+$web-page-primary: mat-palette($mat-green, A200);
+$web-page-accent: mat-palette($mat-light-blue, A200, A100, A400);
+$web-page-warn: mat-palette($mat-red);
+
+// create the scss color variables to use within other components
+$primary: mat-color($web-page-primary);
+$accent: mat-color($web-page-accent);
+$warn: mat-color($web-page-warn);

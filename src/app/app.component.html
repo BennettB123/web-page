@@ -16,12 +16,13 @@
     <mat-nav-list>
       <!-- First mat-list-item is due to bug causing first list item to appear indefinitely hovered on-->
       <a mat-list-item [routerLink]="'#'" (click)="sidenav.toggle()"  style="height:0; position: absolute;"></a>
-      <div class="gridWrapper">
-        <div class="emoji">😀</div>  <a mat-list-item [routerLink]="'/about'" (click)="sidenav.toggle()"> About Me </a>
-        <div class="emoji">🚀</div>  <a mat-list-item [routerLink]="'/projects'" (click)="sidenav.toggle()"> My Projects </a>
-        <div class="emoji">⛳</div>  <a mat-list-item [routerLink]="'/hobbies'" (click)="sidenav.toggle()"> My Hobbies </a>
-        <div class="emoji">📞</div>  <a mat-list-item [routerLink]="'/contact'" (click)="sidenav.toggle()"> Contact Me </a>
-      </div>
+      <a mat-list-item [routerLink]="'/about'" (click)="sidenav.toggle()"> <div class="emoji">😀</div> About Me </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/projects'" (click)="sidenav.toggle()"> <div class="emoji">🚀</div> My Projects </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/hobbies'" (click)="sidenav.toggle()"> <div class="emoji">⛳</div> My Hobbies </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/contact'" (click)="sidenav.toggle()"> <div class="emoji">📞</div> Contact Me </a>
 
     </mat-nav-list>
   </mat-sidenav>
