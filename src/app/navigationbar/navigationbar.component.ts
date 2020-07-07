@@ -12,4 +12,11 @@ export class NavigationbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  linkTexts = {
+    aboutPage: "About Me",
+    projectsPage: "My Projects",
+    hobbiesPage: "My Hobbies",
+    contactPage: "Contact Me",
+  }
+
 }
