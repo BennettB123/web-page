@@ -1,17 +1,6 @@
 <ul>
-  <li>
-    <a href="/about">About</a>
-  </li>
-
-  <li>
-    <a href="/projects">Projects</a>
-  </li>
-
-  <li>
-    <a href="/hobbies">Hobbies</a>
-  </li>
-
-  <li>
-    <a href="/contact">Contact</a>
-  </li>
+  <li [routerLink]="'/about'"> {{ linkTexts.aboutPage }} </li>
+  <li [routerLink]="'/projects'"> {{ linkTexts.projectsPage }} </li>
+  <li [routerLink]="'/hobbies'"> {{ linkTexts.hobbiesPage }} </li>
+  <li [routerLink]="'/contact'"> {{ linkTexts.contactPage }} </li>
 </ul>

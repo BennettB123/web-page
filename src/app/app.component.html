@@ -1,35 +1,12 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <!-- Titlebar -->
-    <app-titlebar></app-titlebar>
+<!-- Titlebar -->
+<app-titlebar></app-titlebar>
 
-    <span class="spacer"></span>
+<!-- Navigationbar -->
+<app-navigationbar></app-navigationbar>
 
-    <!-- Hamburger icon to open side nav -->
-    <mat-icon *ngIf="!sidenav.opened" (click)="sidenav.toggle()">menu</mat-icon>
-    <mat-icon *ngIf="sidenav.opened" (click)="sidenav.toggle()">close</mat-icon>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<mat-sidenav-container>
-  <mat-sidenav #sidenav position="end" mode="push">
-    <mat-nav-list>
-      <!-- First mat-list-item is due to bug causing first list item to appear indefinitely hovered on-->
-      <a mat-list-item [routerLink]="'#'" (click)="sidenav.toggle()"  style="height:0; position: absolute;"></a>
-      <a mat-list-item [routerLink]="'/about'" (click)="sidenav.toggle()"> <div class="emoji">😀</div> About Me </a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/projects'" (click)="sidenav.toggle()"> <div class="emoji">🚀</div> My Projects </a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/hobbies'" (click)="sidenav.toggle()"> <div class="emoji">⛳</div> My Hobbies </a>
-      <mat-divider></mat-divider>
-      <a mat-list-item [routerLink]="'/contact'" (click)="sidenav.toggle()"> <div class="emoji">📞</div> Contact Me </a>
-
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <!-- Only display the contents that the current page contains -->
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<!-- Only display the contents that the current page contains -->
+<router-outlet></router-outlet>
 
 <!-- Might need a footer on every page???? -->
+
+<!-- Add an up-arrow whenever screen can be scrolled up that will auto-scroll to top -->

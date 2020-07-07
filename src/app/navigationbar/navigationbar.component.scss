@@ -1,11 +1,31 @@
 ul {
-
+  margin: 0px;
+  padding: 5px;
+  width: 70%;
+  margin: auto;
 }
 
 li {
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #393e46;
+  border-color: #222831;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 10px 5px;
+
+  text-decoration: none;
+  font-size: 24px;
+  color: #eeeeee;
 }
 
-li a {
-  text-decoration: none;
+li:hover {
+  background-color: #494e56;
 }
+
+li:active {
+  font-size: 20px;
+}
+
