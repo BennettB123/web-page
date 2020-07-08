@@ -1,3 +1,5 @@
+@import '../../color-theme.scss';
+
 ul {
   margin: 0px;
   padding: 5px;
@@ -10,17 +12,16 @@ li {
   align-items: center;
   justify-content: center;
 
-  background-color: #393e46;
-  border-color: #222831;
-  border-radius: 3px;
+  background-color: $foreground-color;
   margin: 5px;
   padding: 10px 5px;
 
   text-decoration: none;
+  cursor: pointer;
   font-size: 24px;
-  color: #eeeeee;
+  color: $text-color;
 }
 
 li:hover {
-  background-color: #494e56;
+  background-color: $foreground-hover;
 }

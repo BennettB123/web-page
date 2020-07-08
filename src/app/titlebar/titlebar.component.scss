@@ -1,7 +1,12 @@
+@import '../../color-theme.scss';
+
 h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
   text-align: center;
-  color: #222831;
-  background-color: #00adb5;
+  color: $text-color;
+  background-color: $primary-color;
   margin: 0;
   padding: 10px;
+  text-shadow: 0 2px 3px $background-color;
+  box-shadow: 0 3px 10px 1px $shadow-color;
 }

@@ -1,7 +1,7 @@
-// The Color Pallete for this site can be found at https://colorhunt.co/palette/2763
+@import './color-theme.scss';
 
 html {
-  background: #222831;
+  background: $background-color;
 }
 
 html, body {
@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  color: #eeeeee;
+  color: $text-color;
 }
 
 p {
@@ -21,8 +21,9 @@ p {
 }
 
 .contentCard {
-  background-color: #393e46;
+  background-color: $foreground-color;
   border-radius: 5px;
   margin: 5px;
   padding: 20px;
+  box-shadow: 0 2px 10px 1px $shadow-color;
 }
