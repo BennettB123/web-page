@@ -3,23 +3,26 @@
 ul {
   margin: 0px;
   padding: 5px;
-  width: 70%;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 li {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
 
-  background-color: $foreground-color;
   margin: 5px;
   padding: 10px 5px;
 
+  background-color: $foreground-color;
   text-decoration: none;
   cursor: pointer;
   font-size: 24px;
   color: $text-color;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 1px $shadow-color;
 }
 
 li:hover {
