@@ -1,0 +1,26 @@
+@import "../../../color-theme.scss";
+
+.githubButton {
+    background-color: $primary-color;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0 2px 3px $background-color;
+    width: 75%;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.githubLogo {
+    height: 40px;
+    margin: auto 5px;
+}
+
+.githubButtonLabel {
+    margin: auto 5px;
+}
