@@ -4,3 +4,20 @@
     <p>Most of my projects can be found on my Github account: BennettB123</p>
     <a class="githubButton" href="https://github.com/BennettB123"> <img class="githubLogo" src="../../../assets/icons/githubLogo.svg" alt="Github logo">  <label class="githubButtonLabel">My Github</label> </a>
 </div>
+
+<div *ngFor="let proj of projects" class="contentCard">
+    <div class="projectHeader">{{proj.name}}</div>
+    <hr>
+
+    <div *ngIf="proj.images.length">
+        <img *ngFor="let img of proj.images" src="{{img}}" class="projectPicture">
+        <hr>
+    </div>
+
+    <p class="projectDescription">{{proj.description}}</p>
+
+    <a class="githubButton" href="{{proj.link}}"> <label class="githubButtonLabel">View on GitHub</label></a>
+    <a *ngIf="proj.demoLink" class="githubButton" href="{{proj.demoLink}}"> <label class="githubButtonLabel">Try a Demo</label></a>
+
+    <div *ngIf="proj.notes" class="projectNotes"> <strong>*Note*  </strong>{{proj.notes}}</div>
+</div>
