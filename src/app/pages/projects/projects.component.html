@@ -9,6 +9,8 @@
     <div class="projectHeader">{{proj.name}}</div>
     <hr>
 
+    <p class="dateCreated">Created {{proj.dateCreated}}</p>
+
     <div *ngIf="proj.images.length">
         <img *ngFor="let img of proj.images" src="{{img}}" class="projectPicture">
         <hr>
